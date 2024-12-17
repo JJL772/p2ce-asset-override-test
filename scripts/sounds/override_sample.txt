@@ -1,0 +1,25 @@
+// This will override the fire sound for the portal gun
+"Weapon_Portalgun.fire_blue"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.55"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"			"50,150"
+	"wave"          "test/tense.wav"
+
+	"soundentry_version" "2"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" 	"P2_portalgun_start"
+
+			"stop_gun"
+			{
+				"match_entry" "Portalgun.fire"
+				"input_max_entries" "1.000000"
+			}
+		}
+	}
+}
